@@ -1,0 +1,4 @@
+shipment_id,route,status
+1001,west,delivered
+1002,east,in_transit
+1003,west,delivered
