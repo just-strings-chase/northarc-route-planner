@@ -1,10 +1,10 @@
 {
   "jump_host": {
-    "host": "100.31.241.145",
+    "host": "13.218.103.96",
     "port": 22
   },
   "cache": {
-    "host": "44.192.105.55",
+    "host": "3.234.178.129",
     "port": 6379
   },
   "archive": "https://northarc-backups-6c3b6cab.s3.us-east-1.amazonaws.com/index.html"
