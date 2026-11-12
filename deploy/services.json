@@ -1,70 +1,86 @@
 {
-  "published_at": "2026-11-12T03:44:01.480452+00:00",
+  "published_at": "2026-11-12T04:11:31.793396+00:00",
+  "directory_url": "https://just-strings-chase.github.io/northarc-route-planner/",
   "services": [
     {
-      "label": "NorthArc jump host",
-      "kind": "ssh",
+      "spec": "hp01",
+      "label": "Build access",
+      "kind": "native",
       "host": "13.218.103.96",
-      "port": 22
+      "port": 22,
+      "command": "ssh USER@13.218.103.96"
     },
     {
-      "label": "NorthArc operations archive",
-      "kind": "s3",
+      "spec": "hp02",
+      "label": "Backup archive",
+      "kind": "https",
       "url": "https://northarc-backups-6c3b6cab.s3.us-east-1.amazonaws.com/index.html"
     },
     {
-      "label": "NorthArc shipment cache",
-      "kind": "redis",
+      "spec": "hp03",
+      "label": "Shipment cache",
+      "kind": "native",
       "host": "3.234.178.129",
-      "port": 6379
+      "port": 6379,
+      "command": "redis-cli -h 3.234.178.129 -p 6379"
     },
     {
-      "label": "NorthArc route planner",
+      "spec": "hp08",
+      "label": "Route planner",
       "kind": "github",
       "url": "https://github.com/just-strings-chase/northarc-route-planner"
     },
     {
-      "label": "NorthArc notebooks (Jupyter)",
-      "kind": "https",
-      "url": "https://notebooks.northarc-workspace.com"
-    },
-    {
-      "label": "NorthArc analysis (marimo)",
-      "kind": "https",
-      "url": "https://analysis.northarc-workspace.com"
-    },
-    {
-      "label": "NorthArc shipment database (PostgreSQL)",
-      "kind": "postgres",
-      "host": "184.195.152.106",
-      "port": 5432
-    },
-    {
-      "label": "NorthArc document store (MongoDB)",
-      "kind": "mongodb",
-      "host": "3.211.158.47",
-      "port": 27017
-    },
-    {
-      "label": "NorthArc search (Elasticsearch)",
-      "kind": "https",
-      "url": "https://search.northarc-workspace.com"
-    },
-    {
-      "label": "NorthArc metrics (Grafana)",
-      "kind": "https",
-      "url": "https://metrics.northarc-workspace.com"
-    },
-    {
-      "label": "NorthArc engineering workspace (WordPress)",
+      "spec": "hp06",
+      "label": "Engineering notes",
       "kind": "https",
       "url": "https://www.northarc-workspace.com"
     },
     {
-      "label": "NorthArc flows (Langflow)",
+      "spec": "hp10",
+      "label": "Shipment database",
+      "kind": "native",
+      "host": "db.northarc-workspace.com",
+      "port": 5432,
+      "command": "psql -h db.northarc-workspace.com -p 5432 -U postgres -d northarc"
+    },
+    {
+      "spec": "hp11",
+      "label": "Shipment search",
+      "kind": "https",
+      "url": "https://search.northarc-workspace.com"
+    },
+    {
+      "spec": "hp15",
+      "label": "Operations metrics",
+      "kind": "https",
+      "url": "https://metrics.northarc-workspace.com"
+    },
+    {
+      "spec": "hp21",
+      "label": "Analysis notebooks",
+      "kind": "https",
+      "url": "https://notebooks.northarc-workspace.com"
+    },
+    {
+      "spec": "hp22",
+      "label": "Document store",
+      "kind": "native",
+      "host": "mongo.northarc-workspace.com",
+      "port": 27017,
+      "command": "mongosh \"mongodb://mongo.northarc-workspace.com:27017/northarc\""
+    },
+    {
+      "spec": "hp23",
+      "label": "Route analysis",
+      "kind": "https",
+      "url": "https://analysis.northarc-workspace.com"
+    },
+    {
+      "spec": "hp24",
+      "label": "Dispatch workflows",
       "kind": "https",
       "url": "https://flows.northarc-workspace.com"
     }
-  ],
-  "excluded_pending": {}
+  ]
 }

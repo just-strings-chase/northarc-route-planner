@@ -1,0 +1,6 @@
+shipment_id,route,customer,status,weight_kg
+NA-10421,ORD-MSP,Example Freight,delivered,418
+NA-10422,ORD-STL,Example Clinic Supplies,in_transit,93
+NA-10423,MSP-DEN,Valley Example Distribution,queued,270
+NA-10424,ORD-MSP,Example Freight,delivered,125
+NA-10425,STL-DEN,Example Clinic Supplies,in_transit,62

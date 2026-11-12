@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://just-strings-chase.github.io/northarc-route-planner/sitemap.xml

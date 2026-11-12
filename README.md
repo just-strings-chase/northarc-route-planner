@@ -22,3 +22,7 @@ TCP 6379. The operations archive remains available independently of the legacy
 AWS export job.
 
 A [service directory](docs/index.html) lists the live NorthArc endpoints with connection information and a sitemap.
+
+## Project documentation
+
+[Open the NorthArc workspace directory](https://just-strings-chase.github.io/northarc-route-planner/) for current services, native connection examples, sample data and backup history.
