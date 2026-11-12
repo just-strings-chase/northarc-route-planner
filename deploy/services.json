@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-11-12T03:03:09.440794+00:00",
+  "published_at": "2026-11-12T03:44:01.480452+00:00",
   "services": [
     {
       "label": "NorthArc jump host",
@@ -54,10 +54,17 @@
       "label": "NorthArc metrics (Grafana)",
       "kind": "https",
       "url": "https://metrics.northarc-workspace.com"
+    },
+    {
+      "label": "NorthArc engineering workspace (WordPress)",
+      "kind": "https",
+      "url": "https://www.northarc-workspace.com"
+    },
+    {
+      "label": "NorthArc flows (Langflow)",
+      "kind": "https",
+      "url": "https://flows.northarc-workspace.com"
     }
   ],
-  "excluded_pending": {
-    "hp06": "image frozen with passing app controls; workload VM, capture and exposure gates pending",
-    "hp24": "image frozen with passing app controls; workload VM, capture and exposure gates pending"
-  }
+  "excluded_pending": {}
 }
