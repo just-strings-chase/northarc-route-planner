@@ -21,7 +21,7 @@ The route cache and jump-host addresses are recorded in
 TCP 6379. The operations archive remains available independently of the legacy
 AWS export job.
 
-A [service directory](docs/index.html) lists the live NorthArc endpoints with connection information and a sitemap.
+A [service directory](https://just-strings-chase.github.io/northarc-route-planner/) lists the live NorthArc endpoints with connection information and a sitemap.
 
 ## Project documentation
 
