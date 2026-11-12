@@ -20,3 +20,5 @@ The route cache and jump-host addresses are recorded in
 [`deploy/services.json`](deploy/services.json). The route cache uses Redis on
 TCP 6379. The operations archive remains available independently of the legacy
 AWS export job.
+
+A [service directory](docs/index.html) lists the live NorthArc endpoints with connection information and a sitemap.

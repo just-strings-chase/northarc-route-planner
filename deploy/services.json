@@ -1,11 +1,63 @@
 {
-  "jump_host": {
-    "host": "13.218.103.96",
-    "port": 22
-  },
-  "cache": {
-    "host": "3.234.178.129",
-    "port": 6379
-  },
-  "archive": "https://northarc-backups-6c3b6cab.s3.us-east-1.amazonaws.com/index.html"
+  "published_at": "2026-11-12T03:03:09.440794+00:00",
+  "services": [
+    {
+      "label": "NorthArc jump host",
+      "kind": "ssh",
+      "host": "13.218.103.96",
+      "port": 22
+    },
+    {
+      "label": "NorthArc operations archive",
+      "kind": "s3",
+      "url": "https://northarc-backups-6c3b6cab.s3.us-east-1.amazonaws.com/index.html"
+    },
+    {
+      "label": "NorthArc shipment cache",
+      "kind": "redis",
+      "host": "3.234.178.129",
+      "port": 6379
+    },
+    {
+      "label": "NorthArc route planner",
+      "kind": "github",
+      "url": "https://github.com/just-strings-chase/northarc-route-planner"
+    },
+    {
+      "label": "NorthArc notebooks (Jupyter)",
+      "kind": "https",
+      "url": "https://notebooks.northarc-workspace.com"
+    },
+    {
+      "label": "NorthArc analysis (marimo)",
+      "kind": "https",
+      "url": "https://analysis.northarc-workspace.com"
+    },
+    {
+      "label": "NorthArc shipment database (PostgreSQL)",
+      "kind": "postgres",
+      "host": "184.195.152.106",
+      "port": 5432
+    },
+    {
+      "label": "NorthArc document store (MongoDB)",
+      "kind": "mongodb",
+      "host": "3.211.158.47",
+      "port": 27017
+    },
+    {
+      "label": "NorthArc search (Elasticsearch)",
+      "kind": "https",
+      "url": "https://search.northarc-workspace.com"
+    },
+    {
+      "label": "NorthArc metrics (Grafana)",
+      "kind": "https",
+      "url": "https://metrics.northarc-workspace.com"
+    }
+  ],
+  "excluded_pending": {
+    "hp06": "image frozen with passing app controls; workload VM, capture and exposure gates pending",
+    "hp24": "image frozen with passing app controls; workload VM, capture and exposure gates pending"
+  }
 }
