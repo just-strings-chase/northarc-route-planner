@@ -1,14 +1,14 @@
 {
-  "published_at": "2026-11-12T04:11:31.793396+00:00",
+  "published_at": "2026-11-13T01:53:26.887314+00:00",
   "directory_url": "https://just-strings-chase.github.io/northarc-route-planner/",
   "services": [
     {
       "spec": "hp01",
       "label": "Build access",
       "kind": "native",
-      "host": "13.218.103.96",
+      "host": "100.26.119.54",
       "port": 22,
-      "command": "ssh USER@13.218.103.96"
+      "command": "ssh USER@100.26.119.54"
     },
     {
       "spec": "hp02",
