@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-11-13T01:53:26.887314+00:00",
+  "published_at": "2026-11-13T20:40:45.423481+00:00",
   "directory_url": "https://just-strings-chase.github.io/northarc-route-planner/",
   "services": [
     {
@@ -20,9 +20,9 @@
       "spec": "hp03",
       "label": "Shipment cache",
       "kind": "native",
-      "host": "3.234.178.129",
+      "host": "54.243.161.23",
       "port": 6379,
-      "command": "redis-cli -h 3.234.178.129 -p 6379"
+      "command": "redis-cli -h 54.243.161.23 -p 6379"
     },
     {
       "spec": "hp08",
